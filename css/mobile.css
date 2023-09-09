@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'hanken';
+    src: url("/assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+    zont-weight: 500, 700, 800;
+    font-style: normal;
+}
+
+:root {
+    --fonte: 'hanken', sans-serif;
+    /* Primarias */
+    --cor1: hsl(0, 100%, 67%);
+    --cor2: hsl(39, 100%, 56%);
+    --cor3: hsl(166, 100%, 37%);
+    --cor4: hsl(234, 85%, 45%);
+    /* Gradientes */
+    --cor5: hsl(252, 100%, 67%);
+    --cor6: hsl(241, 81%, 54%);
+
+    --cor7: hsla(256, 72%, 46%, 1);
+    --cor8: hsla(241, 72%, 46%, 0);
+    /* Neutras */
+    --cor9: hsl(221, 100%, 96%);
+    --cor10: hsl(241, 100%, 89%);
+    --cor11: hsl(224, 30%, 27%);
+}
+
+* {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--fonte);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    padding: 10px 60px 10px 60px;
+    color: white;
+    background-image: linear-gradient(to top, var(--cor6), var(--cor5) 100%);
+    padding-bottom: 30px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+header > h1 {
+    color: var(--cor10);
+    padding: 10px;
+    font-size: 16px;
+}
+
+div#porcentagem {
+    background-image: linear-gradient(to bottom, var(--cor7), var(--cor8));
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+div#porcentagem > h1 {
+    font-size: 3em;
+}
+
+div#porcentagem > p {
+    color: var(--cor10)
+}
+
+header > p {
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: var(--cor10);
+}
+
+main {
+    padding: 20px 20px 20px 20px;
+}
+
+main > h2 {
+    margin-left: 10px;
+    font-size: 1em;
+    color: var(--cor11);
+    text-align: left;
+}
+
+div.summary {
+    border-radius: 10px;
+    padding: 18px 0px 18px 0px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div.summary > p.number{
+    color: var(--cor11);
+    padding-left: 100px;
+}
+
+span.por{
+    color: var(--cor10);
+}
+
+div#reaction {
+    color: var(--cor1);
+    background-color: hsla(0, 100%, 67%, 0.05);
+}
+
+div#memory {
+    color: var(--cor2);
+    background-color: hsla(39, 100%, 56%, 0.05);
+}
+
+div#verbal {
+    color: var(--cor3);
+    background-color: hsl(166, 100%, 37%, 0.05);
+}
+
+div#visual {
+    color: var(--cor4);
+    background-color: hsl(234, 85%, 45%, 0.05);
+}
+
+svg {
+    display: inline-block;
+}
+
+input {
+    margin-top: 10px;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: var(--cor11);
+}
+
+input:hover {
+    transition: 0.2s;
+    background-color: hsl(223, 31%, 20%);
+}
