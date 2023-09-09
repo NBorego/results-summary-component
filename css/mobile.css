@@ -71,27 +71,29 @@ header > p {
 }
 
 main {
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
 }
 
 main > h2 {
-    margin-left: 10px;
+    position: relative;
     font-size: 1em;
     color: var(--cor11);
-    text-align: left;
+    left: -150px;
 }
 
 div.summary {
+    margin: auto;
     border-radius: 10px;
     padding: 18px 0px 18px 0px;
-    margin: 10px;
+    margin-top: 10px;
     display: flex;
+    width: 370px;
     justify-content: space-evenly;
 }
 
 div.summary > p.number{
     color: var(--cor11);
-    padding-left: 100px;
+    padding-left: 190px;
 }
 
 span.por{

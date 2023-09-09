@@ -25,6 +25,13 @@
         font-size: 0.9em;
     }
 
+    main > h2 {
+        position: relative;
+        font-size: 1em;
+        color: var(--cor11);
+        left: -115px;
+    }
+
     main {
         padding-left: 40px;
         position: relative;
@@ -33,5 +40,15 @@
         width: 320px;
         box-shadow: 10px 5px 40px rgba(101, 59, 243, 0.15);
         border-radius: 0px 30px 30px 0px;
+    }
+
+    div.summary {
+        width: 300px;
+        height: 30px;
+    }
+
+    div.summary > p.number{
+        color: var(--cor11);
+        padding-left: 100px;
     }
 }
